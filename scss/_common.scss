@@ -1,0 +1,82 @@
+// * == Vars ==
+
+$Purple: #56597A;
+$Pink: #F78CB6;
+$Pink-Light: #FFF1F9;
+$Gray: #919299;
+$MainBg: #fdfdfd;
+
+$MainTrans: all .1s ease;
+
+// * == Headings & Text ==
+
+h1 {
+	font-family: 'Circular Std';
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 1.16;
+	color: $Purple;
+}
+
+h2 {
+	font-family: 'Circular Std';
+	font-size: 52px;
+	font-weight: 700;
+	line-height: 1.19;
+	color: $Purple;
+}
+
+h3 {
+	font-family: 'Circular Std';
+	font-size: 34px;
+	font-weight: 500;
+	line-height: 1.19;
+	color: $Purple;
+}
+
+h4 {
+	font-family: 'Circular Std';
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 1.19;
+	color: $Pink;
+}
+
+p {
+	font-family: 'ProximaNova';
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.6;
+	color: $Gray;
+}
+
+// * == Blocks ==
+
+*,
+*::before,
+*::after {
+	transition: $MainTrans;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	background-color: $MainBg;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+
+}
+
+.container {
+	max-width: 1210px;
+	padding: 0 20px;
+	margin: 0 auto;
+}

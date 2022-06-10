@@ -1,0 +1,12 @@
+@import '_normalize';
+@import '_fonts';
+@import '_common';
+// font-family: 'ProximaNova';
+// font-family: 'Circular Std';
+// font-family: 'Josefin Sans';
+
+@import '_header';
+
+.main {
+	flex-grow: 1;
+}

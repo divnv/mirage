@@ -1,0 +1,37 @@
+// ? == Header ==
+
+.header {
+
+	&__container {}
+
+	&__logo {}
+
+	&__links {}
+
+	&__nav {}
+
+	&__burger {}
+}
+
+.logo {
+	font-family: 'Josefin Sans';
+	font-size: 30px;
+	font-weight: 700;
+	color: $Purple;
+
+	span {
+		color: $Pink;
+	}
+}
+
+.nav {
+
+	&__list {}
+
+	&__item {}
+
+	&__link {}
+}
+
+.burger {
+}

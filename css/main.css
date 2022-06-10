@@ -1,0 +1,220 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: unset;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  font-weight: 400;
+  src: url("../fonts/proximaNova/ProximaNova-Regular.eot?") format("eot"), url("../fonts/proximaNova/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/proximaNova/ProximaNova-Regular.woff") format("woff"), url("../fonts/proximaNova/ProximaNova-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  font-weight: 700;
+  src: url("../fonts/proximaNova/ProximaNova-Bold.eot?") format("eot"), url("../fonts/proximaNova/ProximaNova-Bold.ttf") format("truetype"), url("../fonts/proximaNova/ProximaNova-Bold.woff") format("woff"), url("../fonts/proximaNova/ProximaNova-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  font-weight: 400;
+  src: url("../fonts/circularStd/CircularStd-Book.eot?") format("eot"), url("../fonts/circularStd/CircularStd-Book.ttf") format("truetype"), url("../fonts/circularStd/CircularStd-Book.woff") format("woff"), url("../fonts/circularStd/CircularStd-Book.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  font-weight: 500;
+  src: url("../fonts/circularStd/CircularStd-Medium.eot?") format("eot"), url("../fonts/circularStd/CircularStd-Medium.ttf") format("truetype"), url("../fonts/circularStd/CircularStd-Medium.woff") format("woff"), url("../fonts/circularStd/CircularStd-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  font-weight: 700;
+  src: url("../fonts/circularStd/CircularStd-Bold.eot?") format("eot"), url("../fonts/circularStd/CircularStd-Bold.ttf") format("truetype"), url("../fonts/circularStd/CircularStd-Bold.woff") format("woff"), url("../fonts/circularStd/CircularStd-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-weight: 700;
+  src: url("../fonts/josefinSans/JosefinSans-Bold.eot?") format("eot"), url("../fonts/josefinSans/JosefinSans-Bold.ttf") format("truetype"), url("../fonts/josefinSans/JosefinSans-Bold.woff") format("woff"), url("../fonts/josefinSans/JosefinSans-Bold.woff2") format("woff2");
+}
+
+h1 {
+  font-family: 'Circular Std';
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.16;
+  color: #56597A;
+}
+
+h2 {
+  font-family: 'Circular Std';
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.19;
+  color: #56597A;
+}
+
+h3 {
+  font-family: 'Circular Std';
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.19;
+  color: #56597A;
+}
+
+h4 {
+  font-family: 'Circular Std';
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.19;
+  color: #F78CB6;
+}
+
+p {
+  font-family: 'ProximaNova';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #919299;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #fdfdfd;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  max-width: 1210px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: 'Josefin Sans';
+  font-size: 30px;
+  font-weight: 700;
+  color: #56597A;
+}
+
+.logo span {
+  color: #F78CB6;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}

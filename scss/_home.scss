@@ -1,0 +1,28 @@
+
+// ? == Home ==
+
+.home {
+
+	&__container {}
+
+	&__suptitle {
+		margin-bottom: 30px;
+
+		&::before {
+			content: '';
+			display: inline-block;
+			margin-right: 7px;
+
+			width: 36px;
+			height: 3px;
+			background-color: $Pink;
+		}
+	}
+
+	&__title {}
+
+	&__text {}
+
+	&__link {}
+}
+

@@ -4,7 +4,9 @@ $Purple: #56597A;
 $Pink: #F78CB6;
 $Pink-Light: #FFF1F9;
 $Gray: #919299;
+$Gray-Light: #AAAAAB;
 $MainBg: #fdfdfd;
+$White: #FFFFFF;
 
 $MainTrans: all .1s ease;
 
@@ -63,6 +65,12 @@ html {
 }
 
 body {
+	font-family: 'ProximaNova';
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.6;
+	color: $Gray;
+
 	background-color: $MainBg;
 }
 
@@ -79,4 +87,36 @@ body {
 	max-width: 1210px;
 	padding: 0 20px;
 	margin: 0 auto;
+}
+
+.link {
+	font-family: 'Circular Std';
+	font-size: 20px;
+	font-weight: 500;
+	color: $White;
+
+	display: inline-block;
+
+	position: relative;
+
+	padding: 18px 85px 18px 22px;
+
+	box-shadow: 10px 10px 20px rgba($Pink, 0.2);
+
+	background-color: $Pink;
+	border-radius: 4px;
+
+	&::after {
+		content: '';
+		display: block;
+		width: 43px;
+		height: 32px;
+
+		position: absolute;
+		right: 22px;
+		top: 50%;
+		transform: translateY(-50%);
+
+		background: url(../img/icons/link.svg)center / contain no-repeat;
+	}
 }

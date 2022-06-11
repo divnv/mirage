@@ -1,14 +1,28 @@
 // ? == Header ==
 
 .header {
+	margin-bottom: 124px;
 
-	&__container {}
+	&__container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		padding-top: 56px;
+	}
 
 	&__logo {}
 
-	&__links {}
+	&__links {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
 
-	&__nav {}
+	&__nav {
+		margin-right: 70px;
+	}
 
 	&__burger {}
 }
@@ -26,12 +40,36 @@
 
 .nav {
 
-	&__list {}
+	&__list {
+		display: flex;
+		flex-direction: row;
+		
+	}
 
-	&__item {}
+	&__item {
+		margin-right: 70px;
 
-	&__link {}
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+
+	&__link {
+		font-family: 'Circular Std';
+		font-size: 20px;
+		font-weight: 500;
+		color: $Gray-Light;
+
+		&.active {
+			color: $Purple;
+		}
+	}
 }
 
 .burger {
+	width: 24px;
+	height: 24px;
+
+	background-color: $Gray-Light;
+	mask: url(../img/icons/burger.svg) center / contain no-repeat;	
 }

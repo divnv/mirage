@@ -8,7 +8,9 @@ $Gray-Light: #AAAAAB;
 $MainBg: #fdfdfd;
 $White: #FFFFFF;
 
-$MainTrans: all .1s ease;
+$PinkShadow: 10px 10px 20px rgba($Pink, 0.2);
+
+$MainTrans: all .2s ease;
 
 // * == Headings & Text ==
 
@@ -49,6 +51,7 @@ p {
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 1.6;
+	letter-spacing: 0.04rem;
 	color: $Gray;
 }
 
@@ -65,6 +68,8 @@ html {
 }
 
 body {
+	height: auto;
+
 	font-family: 'ProximaNova';
 	font-size: 20px;
 	font-weight: 400;
@@ -81,6 +86,7 @@ body {
 	display: flex;
 	flex-direction: column;
 
+	background: url(../img/wrapper/bg-1.svg) top right / 800px 790px no-repeat;
 }
 
 .container {
@@ -93,6 +99,7 @@ body {
 	font-family: 'Circular Std';
 	font-size: 20px;
 	font-weight: 500;
+	letter-spacing: 0.04rem;
 	color: $White;
 
 	display: inline-block;
@@ -101,7 +108,7 @@ body {
 
 	padding: 18px 85px 18px 22px;
 
-	box-shadow: 10px 10px 20px rgba($Pink, 0.2);
+	box-shadow: $PinkShadow;
 
 	background-color: $Pink;
 	border-radius: 4px;
@@ -118,5 +125,94 @@ body {
 		transform: translateY(-50%);
 
 		background: url(../img/icons/link.svg)center / contain no-repeat;
+	}
+}
+
+.card {
+	width: 270px;
+
+	padding: 20px;
+
+	border-radius: 8px;
+	background-color: $Pink-Light;
+
+	text-align: center;
+
+	&__img {
+		margin-bottom: 18px;
+
+		width: 100%;
+		height: 120px;
+
+		background-color: $Pink;
+		mask-image: url(../img/icons/card-1.svg);
+		mask-position: center;
+		mask-size: 50px 50px;
+		mask-repeat: no-repeat;
+	}
+
+	&__title {
+		margin-bottom: 16px;
+	}
+	
+	&__text {
+		font-size: 16px;
+		letter-spacing: 0;
+		line-height: 1.5;
+		margin-bottom: 26px;
+	}
+
+	&__link {
+		display: none;
+
+		position: relative;
+
+		padding-right: 14px;
+
+		font-family: 'Circular Std';
+		font-size: 20px;
+		font-weight: 500;
+		color: $White;
+
+
+		&::after {
+			content: '';
+			display: block;
+			width: 7px;
+			height: 13px;
+
+			position: absolute;
+			right: 0;
+			top: 50%;
+
+			transform: translateY(-38%);
+
+			background: url(../img/icons/traingle.svg) center / contain no-repeat;
+		}
+	}
+
+	&:hover {
+		min-height: 344px;
+
+		background-color: $Pink;
+
+		box-shadow: $PinkShadow;
+
+		.card__img {
+			background-color: $White;
+		}
+
+		.card__title,
+		.card__text {
+			color: $White;
+		}
+
+		.card__text {
+			margin-bottom: 30px;
+		}
+
+		.card__link {
+			display: inline-block;
+		}
 	}
 }

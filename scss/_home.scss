@@ -2,26 +2,39 @@
 // ? == Home ==
 
 .home {
+	margin-bottom: 146px;
 
-	&__container {}
+	&__container {
+		padding-bottom: 50px;
+		padding-top: 18px;
+
+		background: url(../img/home/home__bg.svg) right 74px top 0px / contain no-repeat;
+	}
 
 	&__suptitle {
-		margin-bottom: 30px;
-
+		margin-bottom: 32px;
+		
 		&::before {
 			content: '';
 			display: inline-block;
 			margin-right: 7px;
-
+			
 			width: 36px;
 			height: 3px;
 			background-color: $Pink;
 		}
 	}
+	
+	&__title {
+		max-width: 600px;
+		
+		margin-bottom: 30px;
+	}
 
-	&__title {}
-
-	&__text {}
+	&__text {
+		max-width: 540px;
+		margin-bottom: 50px;
+	}
 
 	&__link {}
 }

@@ -1,0 +1,28 @@
+// ? == Services ==
+
+.services {
+
+	&__container {
+		text-align: center;
+	}
+
+	&__suptitle {
+		margin-bottom: 14px;
+	}
+
+	&__title {
+		margin-bottom: 62px;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: start;
+	}
+
+	&__card {}
+}
+
+
+

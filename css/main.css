@@ -201,7 +201,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url(../img/wrapper/bg-1.svg) top right/800px 790px no-repeat, url(../img/wrapper/bg-2.svg) top 640px left -200px/374px 390px no-repeat, url(../img/wrapper/bg-3.svg) top 1960px right -166px/330px 350px no-repeat;
+  background: url(../img/wrapper/bg-1.svg) top right/800px 790px no-repeat, url(../img/wrapper/bg-2.svg) top 640px left -200px/374px 390px no-repeat, url(../img/wrapper/bg-3.svg) top 1960px right -166px/330px 350px no-repeat, url(../img/wrapper/bg-2.svg) top 2750px left -200px/374px 390px no-repeat;
 }
 
 .container {
@@ -541,6 +541,46 @@ body {
 .design__text {
   letter-spacing: 0;
   margin-bottom: 36px;
+}
+
+.teamwork {
+  margin-bottom: 194px;
+}
+
+.teamwork__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.teamwork__bg {
+  width: 590px;
+  height: 590px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: url(../img/team-work/team_work_bg.svg) center/contain no-repeat;
+}
+
+.teamwork__content {
+  margin-right: 70px;
+  padding-top: 90px;
+}
+
+.teamwork__suptitle {
+  margin-bottom: 18px;
+}
+
+.teamwork__title {
+  margin-bottom: 24px;
+}
+
+.teamwork__text {
+  letter-spacing: 0;
+  margin-bottom: 34px;
 }
 
 .footer {

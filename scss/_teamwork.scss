@@ -1,0 +1,39 @@
+// ? == Team Work ==
+
+.teamwork {
+	margin-bottom: 194px;
+
+	&__container {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	&__bg {
+		width: 590px;
+		height: 590px;
+
+		flex-shrink: 0;
+
+		background: url(../img/team-work/team_work_bg.svg) center / contain no-repeat;
+	}
+
+	&__content {
+		margin-right: 70px;
+		padding-top: 90px;
+	}
+
+	&__suptitle {
+		margin-bottom: 18px;
+	}
+
+	&__title {
+		margin-bottom: 24px;
+	}
+
+	&__text {
+		letter-spacing: 0;
+		margin-bottom: 34px;
+	}
+
+	&__link {}
+}

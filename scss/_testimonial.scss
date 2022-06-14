@@ -1,2 +1,62 @@
 //  ? == Testimonial ==
 
+.testimonial {
+
+	&__cotainer {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+		position: relative;
+	}
+
+	&__bg {
+		width: 420px;
+		height: 420px;
+
+		margin-right: 130px;
+
+		flex-shrink: 0;
+
+		border-radius: 8px;
+		background: url(../img/testimonial/testimonial__bg.svg)center / 308px 350px no-repeat,
+		$Pink;
+
+		box-shadow: $PinkShadow;
+	}
+
+	&__content {
+		max-width: 510px;
+	}
+
+	&__suptitle {
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		margin-bottom: 38px;
+	}
+	
+	&__text {
+		letter-spacing: 0;
+		max-width: 400px;
+		margin-bottom: 34px;
+	}
+
+	&__name {
+		margin-bottom: 8px;
+	}
+
+	&__region {
+		font-size: 16px;
+		font-weight: 400;
+		color: $Gray-Light;
+		letter-spacing: 0;
+	}
+
+	&__slider {
+		position: absolute;
+		right: 70px;
+		bottom: 0;
+	}
+}

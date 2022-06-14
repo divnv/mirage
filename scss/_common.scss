@@ -46,6 +46,14 @@ h4 {
 	color: $Pink;
 }
 
+h5 {
+	font-family: 'ProximaNova';
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1.14;
+	color: $Purple;
+}
+
 p {
 	font-family: 'ProximaNova';
 	font-size: 20px;
@@ -250,6 +258,41 @@ body {
 
 		.card__link {
 			display: inline-block;
+		}
+	}
+}
+
+.slider {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	&__btn {
+
+		width: 25px;
+		height: 25px;
+
+		pointer-events: none;
+
+		background-color: rgba($Purple, 0.6);
+
+		mask-image: url(../img/icons/arrow.svg);
+		mask-position: center;
+		mask-size: 14px 9px;
+		mask-repeat: no-repeat;
+
+		&.active {
+			background-color: $Pink;
+
+			mask-size: 19px 11px;
+
+			pointer-events: all;
+		}
+
+		&:nth-of-type(1) {
+			transform: rotate(180deg);
+
+			margin-right: 6px;
 		}
 	}
 }

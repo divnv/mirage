@@ -86,7 +86,10 @@ body {
 	display: flex;
 	flex-direction: column;
 
-	background: url(../img/wrapper/bg-1.svg) top right / 800px 790px no-repeat;
+	background:
+	url(../img/wrapper/bg-1.svg) top right / 800px 790px no-repeat,
+	url(../img/wrapper/bg-2.svg) top 640px left -200px / 374px 390px no-repeat,
+	url(../img/wrapper/bg-3.svg) top 1960px right -166px / 330px 350px no-repeat;
 }
 
 .container {
@@ -126,6 +129,16 @@ body {
 
 		background: url(../img/icons/link.svg)center / contain no-repeat;
 	}
+
+	&--small {
+		padding: 14px 70px 14px 16px;
+
+		&::after {
+			width: 38px;
+			height: 28px;
+			right: 16px;
+		}
+	}
 }
 
 .card {
@@ -138,6 +151,31 @@ body {
 
 	text-align: center;
 
+	&:nth-of-type(1) {
+		.card__img {
+			mask-image: url(../img/icons/card-1.svg);
+			mask-size: 50px 50px;
+		}
+	}
+	&:nth-of-type(2) {
+		.card__img {
+			mask-image: url(../img/icons/card-2.svg);
+			mask-size: 43px 43px;
+		}
+	}
+	&:nth-of-type(3) {
+		.card__img {
+			mask-image: url(../img/icons/card-3.svg);
+			mask-size: 48px 48px;
+		}
+	}
+	&:nth-of-type(4) {
+		.card__img {
+			mask-image: url(../img/icons/card-4.svg);
+			mask-size: 44px 44px;
+		}
+	}
+
 	&__img {
 		margin-bottom: 18px;
 
@@ -145,9 +183,7 @@ body {
 		height: 120px;
 
 		background-color: $Pink;
-		mask-image: url(../img/icons/card-1.svg);
 		mask-position: center;
-		mask-size: 50px 50px;
 		mask-repeat: no-repeat;
 	}
 

@@ -1,0 +1,38 @@
+// ? == Design ==
+
+.design {
+	margin-bottom: 194px;
+
+	&__container {
+		display: flex;
+	}
+
+	&__bg {
+		width: 610px;
+		height: 470px;
+
+		margin-right: 60px;
+
+
+		flex-shrink: 0;
+
+		background: url(../img/design/design__bg.png) center / contain no-repeat;
+	}
+
+	&__content {}
+
+	&__suptitle {
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		margin-bottom: 24px;
+	}
+	
+	&__text {
+		letter-spacing: 0;
+		margin-bottom: 36px;
+	}
+
+	&__link {}
+}

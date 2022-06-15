@@ -209,7 +209,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url(../img/wrapper/bg-1.svg) top right/800px 790px no-repeat, url(../img/wrapper/bg-2.svg) top 640px left -200px/374px 390px no-repeat, url(../img/wrapper/bg-3.svg) top 1960px right -166px/330px 350px no-repeat, url(../img/wrapper/bg-2.svg) top 2750px left -200px/374px 390px no-repeat;
+  background: url(../img/wrapper/bg-1.svg) top right/800px 790px no-repeat, url(../img/wrapper/bg-2.svg) top 640px left -200px/374px 390px no-repeat, url(../img/wrapper/bg-3.svg) top 1960px right -166px/330px 350px no-repeat, url(../img/wrapper/bg-2.svg) top 2750px left -200px/374px 390px no-repeat, url(../img/wrapper/bg-4.svg) top 3826px right -230px/430px no-repeat;
 }
 
 .container {
@@ -261,6 +261,8 @@ body {
   padding: 20px;
   border-radius: 8px;
   background-color: #FFF1F9;
+  -webkit-box-shadow: 2px 2px 4px rgba(193, 193, 193, 0.3);
+          box-shadow: 2px 2px 4px rgba(193, 193, 193, 0.3);
   text-align: center;
 }
 
@@ -400,6 +402,82 @@ body {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   margin-right: 6px;
+}
+
+.emailform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  -webkit-box-shadow: 20px 20px 40px rgba(145, 146, 153, 0.25);
+          box-shadow: 20px 20px 40px rgba(145, 146, 153, 0.25);
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  padding: 14px 14px 14px 60px;
+}
+
+.emailform__input {
+  font-family: 'ProximaNova';
+  font-size: 20px;
+  font-weight: 400;
+  color: #919299;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-right: 20px;
+}
+
+.emailform__input::-webkit-input-placeholder {
+  font-family: 'ProximaNova';
+  font-size: 20px;
+  font-weight: 400;
+  color: #D2D2D2;
+}
+
+.emailform__input:-ms-input-placeholder {
+  font-family: 'ProximaNova';
+  font-size: 20px;
+  font-weight: 400;
+  color: #D2D2D2;
+}
+
+.emailform__input::-ms-input-placeholder {
+  font-family: 'ProximaNova';
+  font-size: 20px;
+  font-weight: 400;
+  color: #D2D2D2;
+}
+
+.emailform__input::placeholder {
+  font-family: 'ProximaNova';
+  font-size: 20px;
+  font-weight: 400;
+  color: #D2D2D2;
+}
+
+.emailform__btn {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.emailform::before {
+  content: '';
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  left: 27px;
+  top: 50%;
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
+  background: url(../img/icons/mail.svg) center/contain no-repeat;
 }
 
 .header {
@@ -633,7 +711,7 @@ body {
 }
 
 .testimonial {
-  margin-bottom: 210px;
+  margin-bottom: 214px;
 }
 
 .testimonial__cotainer {
@@ -697,6 +775,10 @@ body {
   bottom: 0;
 }
 
+.brands {
+  margin-bottom: 160px;
+}
+
 .brands__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -757,6 +839,44 @@ body {
           mask-image: url(../img/brands/google.svg);
   -webkit-mask-size: 180px;
           mask-size: 180px;
+}
+
+.subscribe {
+  margin-bottom: 160px;
+}
+
+.subscribe__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.subscribe__title {
+  margin-bottom: 24px;
+}
+
+.subscribe__text {
+  letter-spacing: 0;
+  text-align: center;
+  max-width: 540px;
+  margin-bottom: 38px;
+}
+
+.subscribe__bg {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: -30px;
+  left: -82px;
+  background: url(../img/subscribe/subscribe__bg.svg) center/contain no-repeat;
 }
 
 .footer {

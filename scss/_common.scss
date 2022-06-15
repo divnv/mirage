@@ -4,12 +4,17 @@ $Purple: #56597A;
 $Pink: #F78CB6;
 $Pink-Light: #FFF1F9;
 $Gray: #919299;
+$Gray2:#D2D2D2;
 $Gray-Light: #AAAAAB;
 $GrayExtra-Light:#c1c1c1;
 $MainBg: #fdfdfd;
 $White: #FFFFFF;
 
 $PinkShadow: 10px 10px 20px rgba($Pink, 0.2);
+
+$LighGrayShadow: 2px 2px 4px rgba($GrayExtra-Light, 0.3);
+
+$GrayShadow: 20px 20px 40px rgba($Gray, 0.25);
 
 $MainTrans: all .2s ease;
 
@@ -99,7 +104,8 @@ body {
 	url(../img/wrapper/bg-1.svg) top right / 800px 790px no-repeat,
 	url(../img/wrapper/bg-2.svg) top 640px left -200px / 374px 390px no-repeat,
 	url(../img/wrapper/bg-3.svg) top 1960px right -166px / 330px 350px no-repeat,
-	url(../img/wrapper/bg-2.svg) top 2750px left -200px	 / 374px 390px no-repeat;
+	url(../img/wrapper/bg-2.svg) top 2750px left -200px / 374px 390px no-repeat,
+	url(../img/wrapper/bg-4.svg) top 3826px right -230px / 430px no-repeat;
 }
 
 .container {
@@ -158,6 +164,8 @@ body {
 
 	border-radius: 8px;
 	background-color: $Pink-Light;
+
+	box-shadow: $LighGrayShadow;
 
 	text-align: center;
 
@@ -295,5 +303,57 @@ body {
 
 			margin-right: 6px;
 		}
+	}
+}
+
+.emailform {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	position: relative;
+
+	width: 100%;
+	max-width: 700px;
+
+	box-shadow: $GrayShadow;
+	background-color: $White;
+
+	border-radius: 4px;
+	padding: 14px 14px 14px 60px;
+
+	&__input {
+		font-family: 'ProximaNova';
+		font-size: 20px;
+		font-weight: 400;
+		color: $Gray;
+
+		flex-basis: 100%;
+
+		margin-right: 20px;
+
+		&::placeholder {
+			font-family: 'ProximaNova';
+			font-size: 20px;
+			font-weight: 400;
+			color: $Gray2;
+		}
+	}
+
+	&__btn {
+		flex-shrink: 0;
+	}
+
+	&::before {
+		content: '';
+		width: 19px;
+		height: 19px;
+
+		position: absolute;
+		left: 27px;
+		top: 50%;
+		transform: translateY(-40%);
+
+		background: url(../img/icons/mail.svg) center / contain no-repeat;
 	}
 }

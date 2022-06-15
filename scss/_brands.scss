@@ -1,0 +1,49 @@
+// ? == Brands ==
+
+.brands {
+
+	&__container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__item {}
+
+	&__link {
+		width: 200px;
+		height: 60px;
+		display: block;
+
+		background-color: $GrayExtra-Light;
+
+		mask-position: center;
+		mask-repeat: no-repeat;
+
+		&--ferrari {
+			mask-image: url(../img/brands/ferrari.svg);
+			mask-size: 158px;
+		}
+
+		&--microsoft {
+			mask-image: url(../img/brands/microsoft.svg);
+			mask-size: 195px;
+		}
+
+		&--ng {
+			mask-image: url(../img/brands/nat-geo.svg);
+			mask-size: 143px;
+		}
+
+		&--deloitte {
+			mask-image: url(../img/brands/deloitte.svg);
+			mask-size: 178px;
+		}
+
+		&--google {
+			mask-image: url(../img/brands/google.svg);
+			mask-size: 180px;
+		}
+	}
+}

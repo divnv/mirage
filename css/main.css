@@ -632,6 +632,10 @@ body {
   margin-bottom: 34px;
 }
 
+.testimonial {
+  margin-bottom: 210px;
+}
+
 .testimonial__cotainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -691,6 +695,68 @@ body {
   position: absolute;
   right: 70px;
   bottom: 0;
+}
+
+.brands__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brands__link {
+  width: 200px;
+  height: 60px;
+  display: block;
+  background-color: #c1c1c1;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+}
+
+.brands__link--ferrari {
+  -webkit-mask-image: url(../img/brands/ferrari.svg);
+          mask-image: url(../img/brands/ferrari.svg);
+  -webkit-mask-size: 158px;
+          mask-size: 158px;
+}
+
+.brands__link--microsoft {
+  -webkit-mask-image: url(../img/brands/microsoft.svg);
+          mask-image: url(../img/brands/microsoft.svg);
+  -webkit-mask-size: 195px;
+          mask-size: 195px;
+}
+
+.brands__link--ng {
+  -webkit-mask-image: url(../img/brands/nat-geo.svg);
+          mask-image: url(../img/brands/nat-geo.svg);
+  -webkit-mask-size: 143px;
+          mask-size: 143px;
+}
+
+.brands__link--deloitte {
+  -webkit-mask-image: url(../img/brands/deloitte.svg);
+          mask-image: url(../img/brands/deloitte.svg);
+  -webkit-mask-size: 178px;
+          mask-size: 178px;
+}
+
+.brands__link--google {
+  -webkit-mask-image: url(../img/brands/google.svg);
+          mask-image: url(../img/brands/google.svg);
+  -webkit-mask-size: 180px;
+          mask-size: 180px;
 }
 
 .footer {

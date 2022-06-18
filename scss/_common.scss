@@ -60,6 +60,15 @@ h5 {
 	color: $Purple;
 }
 
+h6 {
+	font-family: 'Circular Std';
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 1.33;
+	letter-spacing: 0.07rem;
+	color: $Purple;
+}
+
 p {
 	font-family: 'ProximaNova';
 	font-size: 20px;
@@ -112,6 +121,57 @@ body {
 	max-width: 1210px;
 	padding: 0 20px;
 	margin: 0 auto;
+}
+
+
+.logo {
+	font-family: 'Josefin Sans';
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 1;
+	color: $Purple;
+
+	display: block;
+
+	span {
+		color: $Pink;
+	}
+}
+
+.nav {
+
+	&__list {
+		display: flex;
+		flex-direction: row;
+		
+	}
+
+	&__item {
+		margin-right: 70px;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+
+	&__link {
+		font-family: 'Circular Std';
+		font-size: 20px;
+		font-weight: 500;
+		color: $Gray-Light;
+
+		&.active {
+			color: $Purple;
+		}
+	}
+}
+
+.burger {
+	width: 24px;
+	height: 24px;
+
+	background-color: $Gray-Light;
+	mask: url(../img/icons/burger.svg) center / contain no-repeat;	
 }
 
 .link {
@@ -355,5 +415,89 @@ body {
 		transform: translateY(-40%);
 
 		background: url(../img/icons/mail.svg) center / contain no-repeat;
+	}
+}
+
+.lang {
+
+	position: relative;
+
+	padding-left: 41px;
+	
+
+	&::before {
+		content: '';
+		display: block;
+		width: 28px;
+		height: 28px;
+
+		position: absolute;
+		left: 0;
+		top: 50%;
+
+		transform: translateY(-50%);
+
+		background: url(../img/icons/lang.svg) center / contain no-repeat;
+	}
+
+	.lang__select {
+		font-family: 'Circular Std';
+		font-size: 14px;
+		font-weight: 400;
+		letter-spacing: 0.04rem;
+		color: $White;
+
+		padding-right: 13px;
+
+		cursor: pointer;
+
+		background-color: transparent;
+
+		background: url(../img/icons/lang__arrow.svg) right top 60% / 8px 8px no-repeat;
+
+		appearance: none;
+
+	}
+
+	&__item {}
+}
+
+.social {
+
+	&__item {}
+
+	&__link {
+
+		&--inst {}
+
+		&--tw {}
+
+		&--yt {}
+
+		&--fb {}
+	}
+}
+
+.link-box {
+
+	&__title {
+		margin-bottom: 38px;
+	}
+
+	&__list {}
+
+	&__item {
+		margin-bottom: 25px;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	&__link {
+		font-family: 'ProximaNova';
+		font-size: 20px;
+		font-weight: 400;
+		letter-spacing: 0.04rem;
 	}
 }

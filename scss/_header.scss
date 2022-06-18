@@ -1,7 +1,7 @@
 // ? == Header ==
 
 .header {
-	margin-bottom: 104px;
+	margin-bottom: 112px;
 
 	&__container {
 		display: flex;
@@ -9,7 +9,7 @@
 		justify-content: space-between;
 		align-items: center;
 
-		padding-top: 56px;
+		padding-top: 64px;
 	}
 
 	&__logo {}
@@ -25,51 +25,4 @@
 	}
 
 	&__burger {}
-}
-
-.logo {
-	font-family: 'Josefin Sans';
-	font-size: 30px;
-	font-weight: 700;
-	color: $Purple;
-
-	span {
-		color: $Pink;
-	}
-}
-
-.nav {
-
-	&__list {
-		display: flex;
-		flex-direction: row;
-		
-	}
-
-	&__item {
-		margin-right: 70px;
-
-		&:last-of-type {
-			margin-right: 0;
-		}
-	}
-
-	&__link {
-		font-family: 'Circular Std';
-		font-size: 20px;
-		font-weight: 500;
-		color: $Gray-Light;
-
-		&.active {
-			color: $Purple;
-		}
-	}
-}
-
-.burger {
-	width: 24px;
-	height: 24px;
-
-	background-color: $Gray-Light;
-	mask: url(../img/icons/burger.svg) center / contain no-repeat;	
 }
